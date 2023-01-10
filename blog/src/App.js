@@ -21,6 +21,13 @@ function App() {
      <div className="black-nav">
       <h4 id={post}>ReactBlog</h4>
      </div>
+
+     <button onClick={()=>{
+        let copy = [...글제목];
+        copy[1] = '신사 인기 우동 추천';
+        글제목변경(copy);
+     }}>글수정</button>
+
       <div className="list">
         <h4>{글제목[0]} <span onClick={()=>{ 따봉변경(따봉+1) }}> 👍</span> {따봉} </h4>
         <p>1월 16일 발행</p>
