@@ -20,15 +20,15 @@ function App() {
      </div>
       <div className="list">
         <h4>{글제목[0]}</h4>
-        <p>2월 17일 발행</p>
+        <p>1월 16일 발행</p>
       </div>
       <div className="list">
         <h4>{글제목[1]}</h4>
-        <p>2월 17일 발행</p>
+        <p>2월 22일 발행</p>
       </div>
       <div className="list">
         <h4>{글제목[2]}</h4>
-        <p>2월 17일 발행</p>
+        <p>8월 8일 발행</p>
       </div>
      <h4>{post}</h4>
     </div>
