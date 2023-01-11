@@ -23,6 +23,13 @@ function App() {
      </div>
 
      <button onClick={()=>{
+        let copyForSort = [...글제목];
+        copyForSort.sort();
+        console.log(copyForSort);
+        글제목변경(copyForSort);
+     }}>가나다순정렬</button>
+
+     <button onClick={()=>{
         let copy = [...글제목];
         copy[1] = '신사 인기 우동 추천';
         글제목변경(copy);
