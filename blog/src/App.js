@@ -21,7 +21,7 @@ function App() {
      <div className="black-nav">
       <h4 id={post}>ReactBlog</h4>
      </div>
-
+     
      <button onClick={()=>{
         let copyForSort = [...글제목];
         copyForSort.sort();
@@ -47,9 +47,30 @@ function App() {
         <h4>{글제목[2]}</h4>
         <p>8월 8일 발행</p>
       </div>
+
+      <Modal></Modal>
+      
+      <Modal/>
+
      <h4>{post}</h4>
     </div>
   );
+}
+
+// 1. let Modal = () => {} 도 가능
+
+// 2. function 방법
+function Modal() {
+  return (
+   /* <> */
+      <div className="modal">
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+      </div>
+      /* <div></div>
+    </> */
+  )
 }
 
 export default App;
