@@ -52,7 +52,7 @@ function App() {
       
       <Modal/>
 
-     <h4>{post}</h4>
+     {/* <h4>{post}</h4> */}
     </div>
   );
 }
